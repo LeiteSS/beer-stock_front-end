@@ -1,0 +1,22 @@
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    margin-bottom: 16px;
+    justify-content: space-between;
+    
+}
+
+.column-label {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+.form-group {
+	padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    margin: 8px 8px 8px 0;
+}
+

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400');
+
+.content {
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo_area{
+  display: flex;
+  justify-content: center;
+}

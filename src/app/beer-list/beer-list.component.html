@@ -1,0 +1,25 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="16px grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let beer of beers | async">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                    {{beer.name}}
+                </mat-card-header>
+                <img mat-card-image src="https://cdn.pixabay.com/photo/2015/07/10/17/53/beer-839865_960_720.jpg" alt="Cheers!">
+                <mat-card-content>
+                    <p>Brand: {{beer.brand}}</p>
+                    <p>Max: {{beer.max}}</p>
+                    <p>Quantity: {{beer.quantity}}</p>
+                    <p>Type: {{beer.type}}</p>
+                    <button mat-mini-fab (click)="incrementQty(beer.id, 0)" color="primary">+</button>
+                    <button mat-mini-fab (click)="decrementQty(beer.id, 1)" color="">-</button>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button (click)="deleteBeer(beer.id)" mat-button>Delete</button>
+                    <button (click)="updateBeer(beer.id)" mat-button>Update</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
