@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
   providedIn: 'root'
 })
 export class BeerService {
-  private baseUrl = 'http://localhost:8080/api/v1/beers';
+  private baseUrl = 'https://beer-stock.herokuapp.com/api/v1/beers';
 
   constructor(private http: HttpClient) { }
 
